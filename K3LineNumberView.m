@@ -6,11 +6,11 @@
 //  Copyright 2009 usagimaru.
 //
 
-#import "K3RulerView.h"
+#import "K3LineNumberView.h"
 #import "K3NSDictionaryAddition.h"
 
 
-@interface K3RulerView (K3RulerViewPrivate)
+@interface K3LineNumberView (Private)
 
 - (void)_drawNumber:(unsigned)num
 			atPoint:(NSPoint)point
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation K3RulerView
+@implementation K3LineNumberView
 
 - (id)initWithFrame:(NSRect)frame
 {
@@ -36,7 +36,7 @@
     }
     return self;
 }
-+ (K3RulerView*)rulerView {return [[[K3RulerView alloc] init] autorelease];}
++ (K3LineNumberView*)rulerView {return [[[K3LineNumberView alloc] init] autorelease];}
 - (void)dealloc
 {
 	if (_textObj)

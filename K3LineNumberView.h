@@ -10,7 +10,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface K3RulerView : NSRulerView
+@interface K3LineNumberView : NSRulerView
 {
 	id _textObj;
 	NSMutableArray *_lineNumberInfo;
@@ -25,7 +25,7 @@
 	unsigned _charCount;
 }
 
-+ (K3RulerView*)rulerView;
++ (K3LineNumberView*)rulerView;
 
 /* NSTextView を設定 */
 - (void)setText:(id)text;
